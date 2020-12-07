@@ -1,12 +1,12 @@
 from os.path import join
 from re import match
-from typing import List, Tuple
+from typing import List
 
 
 fields = ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
 
 
-def read_input(path: str) -> Tuple[List[str], int]:
+def read_input(path: str) -> List[str]:
     with open(path) as f:
         values = f.read().split('\n\n')
 
