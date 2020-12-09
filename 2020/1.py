@@ -10,12 +10,8 @@ def read_input(path: str) -> List[int]:
 def part_one(entries: List[int]) -> int:
     for e in entries:
         rem = 2020 - e
-        try:
-            entries.index(rem)
-        except ValueError:
-            continue
-
-        return e * rem
+        if rem in entries:
+            return e * rem
     return 0
 
 
@@ -23,11 +19,8 @@ def part_two(entries: List[int]) -> int:
     for i, e in enumerate(entries):
         for v in entries[i+1:]:
             rem = 2020 - e - v
-            try:
-                entries.index(rem)
-            except ValueError:
-                continue
-            return rem * e * v
+            if rem in entries:
+                return rem * e * v
     return 0
 
 

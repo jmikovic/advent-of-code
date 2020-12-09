@@ -11,15 +11,8 @@ def read_input(path: str) -> List[int]:
 
 def check_valid(numbers: [int], target: int) -> bool:
     for n in numbers:
-        rem = target - n
-        if n == rem:
-            continue
-        try:
-            numbers.index(rem)
-        except ValueError:
-            continue
-
-        return True
+        if (target - n) in numbers:
+            return True
     return False
 
 
