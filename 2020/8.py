@@ -3,7 +3,7 @@ from os.path import join
 from typing import List, Tuple
 
 
-def read_input(path: str) -> List[int]:
+def read_input(path: str) -> List[str]:
     with open(path) as f:
         values = [v.strip() for v in f.readlines()]
 
