@@ -47,4 +47,3 @@ if __name__ == "__main__":
 
     part_two = get_earliest_subsequent(buses)
     print(f'part two: {part_two}')
-
