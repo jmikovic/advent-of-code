@@ -1,2 +1,4 @@
 .vscode/
 */inputs/
+*/*.input
+*/*.txt
