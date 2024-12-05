@@ -3,3 +3,6 @@
 */*.input
 */*.txt
 .DS_Store
+bin/
+lib/
+pyvenv.cfg
